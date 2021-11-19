@@ -1,0 +1,2 @@
+".blind".css("display", "none")
+

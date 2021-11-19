@@ -1,0 +1,177 @@
+body{  
+    font-size: 0.8em; /* 폰트 사이즈 16px X 0.8 */
+}
+
+/* ----------------------레이 아웃------------------------------ */
+.sidemenu {
+    float: left; /* 왼쪽 정렬 */
+    width: 0px; /* 너비는 전체의 200px */
+    height: 879px; /* 높이는 900px */
+    padding-top: 60px; /* 위의 내부 간격 60px */
+    display:none;
+    top: 0%;
+    background-color:aliceblue ;
+    position: relative;
+}
+
+.wrapper {
+    float: left; /* 왼쪽 정렬 */
+    width: 100%; /*  사이드 메뉴 미출력시 너비는 전체의 100% */
+    height: auto; /* 높이는 1000px */
+   
+}
+
+.header {
+    width: auto;
+    height: 35px;
+}
+
+
+.addmenu {
+    width:70%;
+    height:90%;
+    background-color: white;
+    position: fixed;
+    top: 5%;
+    right:-70%;
+    transition: all 0.2s; /* addBtn 체크 해제시 닫히는 트렌지션 */
+}
+
+
+.content {
+    width: 100%; /* 너비는 전체의 100% */
+    height: 90%; /* 높이는 전체의 91% */
+
+}
+
+
+#footer{
+    width: 100%;
+    height: 4%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    background-color: silver;
+}
+
+/*--------------------------- 사이드 메뉴----------------------------*/
+h1 {
+    top: 0%;
+    position: absolute;
+}
+
+.title {
+    cursor: pointer; /* 마우스 이벤트 포인터 */
+}
+
+a {
+    text-decoration: none; /* 하이퍼 링크의 밑줄 없앰*/
+    color: inherit; /* 하이퍼 링크 색상 제거 */
+}
+
+li {
+    padding: 5%;
+}
+/* -------------------iframe (출력창)---------------- */
+
+.insideHeader {
+    width: 100%; /* 너비는 전체의 100% */
+    height: 65px; /* 높이는 65px */
+    background: grey; /* 배경색은 grey */
+}
+
+.Iname {
+    width: 190px;
+    height: 45px;
+    padding-top: 15px;
+    text-align: center;
+    color:blue;
+  
+    background-color: white;
+    border:1px solid blue;
+    border-top-width: thick;
+    border-top-right-radius: 15%
+}
+
+.insideBtn {
+    background-color:aqua;
+    width: 100%;
+    height: 60px;
+}
+
+.insideRbtn {
+    width: 30px;
+    height: 30px;
+    top: 10%;
+    left: 2%;
+}
+
+.insideSearch {
+    width: 100%;
+    height: 50px;
+    background-color: blanchedalmond;
+}
+
+table {
+    width: 99%; /* 브라우저 너비 & iframe의 100% 사용 */
+    height: auto;
+    left: 1%;
+    position: relative;
+}
+
+th{
+    padding: 10px;
+    text-align: left;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+
+td {
+    padding: 5px;
+    
+}
+
+table, th, td {
+    border: 1px solid grey;
+    border-collapse:collapse;
+    border-left: 0;
+    border-right: 0;
+}
+
+/* -----------------------------------버튼------------------------------------- */
+.smBtn { /* 사이드 메뉴 버튼 */
+    width: 50px;
+    height: 40px;
+    top: 10px;
+}
+
+.csBtn { /* 검색 버튼 */
+    margin: 10px;
+    width: 110px;
+    height: 35px;
+    color: blue;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    position: absolute;
+    top: 0%;
+    
+}
+
+button {
+    background:white;
+    margin-top: 0%;
+    cursor: pointer;
+}
+
+#addBtn + label {  /* 클릭시 iframe, content, addmenu 조정 */
+    right: 0%;
+    width: 50px;
+    height: 90%;
+    cursor: pointer;
+    background-color: brown;
+    position: fixed;
+    top: 6%;
+    transition: all 0.2s; /* addBtn 체크해제시 트렌지션 */ 
+
+}

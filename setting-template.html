@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport width=device-width,intial-scale=1.0">
+<link rel="stylesheet" href="css/blue canvas.css">
+<script src="js/jquery.js"></script>
+<script src= "js/jquery.bxslider.min.js"></script>
+<script src = "js/blue canvas.js"></script>
+<script src = "js/table.js"></script>
+</head>
+<body>
+<div class = "insideHeader">
+    <h3 class = Iname> 기본 권한 목록</h3> <!--목록 생성-->
+</div>
+<div>
+    <div class = "insideBtn">
+        <input class="insideRbtn" type = "reset" value = "re">
+    </div>
+    <div class = "insideSearch">
+        <lable class = "searchValue">검색결과:</lable> <!--sr = search-->
+        <!--검색 결과 변경 필요. 검색창에 값 입력시 자동 산출-->
+        <input type = "text" id = "sub" value = " 1-8 (전체: 8 )" readonly>
+
+        <lable>결과 내 검색: </lable>
+        <input type = "search">
+        <button class = "insideDw">다운로드</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr> <!--th 클릭시 종류에 따른 정렬-->
+            <th>템플릿 명</th>
+            <th>템플릿 구조</th>
+            <th>설명</th>
+            <th>사용 상태</th>
+           </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1 x 1</td>
+                <td></td>
+                <td>26.5 형 상하 분할</td>
+                <td>사용</td>
+           </tr>
+
+            <tr>
+                <td>2 x 1</td>
+                <td><img src = "images/도형.jpg" width="50px" height="50px"></td>
+                <td>26.5 형 상하 분할, 상단 2분할</td>
+                <td>사용</td>
+            </tr>
+
+            <tr>
+                <td>1 x 2</td>
+                <td><img src = "images/구.jpg" width="50px" height="50px"></td>
+                <td>26,5 형 상하 분할, 하단 2분할</td>
+                <td>사용</td>
+            </tr>
+
+            <tr>
+                <td>2 x 2</td>
+                <td><img src = "images/뿔.jpg" width="50px" height="50px"></td>
+                </td>
+                <td>26,5 형 상하 분할, 상하단 4분할</td>
+                <td>사용</td>
+            </tr>
+
+            <tr>
+                <td>1 x 1L</td>
+                <td><img src = "images/기둥.jpg" width="50px" height="50px"></td>
+                <td>49형 상하 분할, 하단 장분할</td>
+                <td>사용</td>
+            </tr>
+
+            <tr>
+                <td>1l x 1</td>
+                <td><img src = "images/삼각.jpg" width="50px" height="50px"></td>
+                <td>49형 상하 분할, 상단 장분할</td>
+                <td>사용</td>
+            </tr>
+
+            <tr>
+                <td>1 x 1W</td>
+                <td><img src = "images/상자.jpg" width="50px" height="50px"></td>
+                <td>49형 좌우 분할, 우측 장분할</td>
+                <td>사용</td>
+            </tr>
+
+            <tr>
+                <td>1W x 1</td>
+                <td><img src = "images/육각.jpg" width="50px" height="50px"></td>
+                <td>49형 좌우 분할, 좌측 장분할</td>
+                <td>사용</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
