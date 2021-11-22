@@ -28,7 +28,7 @@ $(document).ready(function(){  //class = wrapper에 있는 버튼 클릭시 사�
             $(".sidemenu").removeClass("active");
         } else {
             $(".sidemenu").addClass("active");
-            $(".sidemenu").css("width", "200px"); // 사이드 메뉴 출력시 200px 고정 //
+            $(".sidemenu").css("width", "10%"); // 사이드 메뉴 출력시 200px 고정 //
             $(".sidemenu").css("display", "block");
             $(".wrapper").css("width", "89%"); //사이드 메뉴 출력시 전체 너비의 83% 너비//
         }
